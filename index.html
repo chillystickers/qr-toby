@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Si encontraste a Toby</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 28px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(145deg, #c8e7f8, #eef8ff);
+      color: #3b3531;
+    }
+    .tarjeta {
+      width: 100%;
+      max-width: 410px;
+      padding: 28px 22px;
+      text-align: center;
+      background: #ffffff;
+      border-radius: 26px;
+      box-shadow: 0 10px 30px rgba(50, 40, 30, 0.12);
+    }
+    .huellita { font-size: 30px; margin-bottom: 8px; }
+    .foto-mascota {
+      display: block;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.16);
+      margin: 0 auto 18px;
+      background: #f4f0ec;
+    }
+    h1 { margin: 0 0 10px; font-size: 28px; color: #4288b8; }
+    .intro { font-size: 16px; line-height: 1.5; margin: 0 0 22px; }
+    .contacto {
+      text-align: left;
+      border: 1px solid #eee7e2;
+      border-radius: 16px;
+      padding: 14px;
+      margin-top: 12px;
+      background: #fffdfb;
+    }
+    .contacto h2 { margin: 0 0 5px; font-size: 17px; }
+    .telefono { margin: 0 0 12px; color: #6c625c; font-size: 14px; }
+    .botones { display: flex; gap: 8px; }
+    .boton {
+      flex: 1;
+      display: inline-block;
+      padding: 11px 8px;
+      border-radius: 10px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+      color: white;
+      background: #4288b8;
+    }
+    .boton.whatsapp { background: #218c55; }
+    .nota { margin: 20px 0 0; font-size: 12px; color: #8a817b; }
+  </style>
+</head>
+<body>
+  <main class="tarjeta">
+    <div class="huellita" aria-hidden="true">🐾</div>
+    <!-- Guardá la foto en esta misma carpeta con el nombre: toby.jpg -->
+    <img class="foto-mascota" src="toby.jpg" alt="Foto de Toby">
+    <h1>¡Soy Toby!</h1>
+    <p class="intro">¿Me encontraste? 🐶<br>
+      ¡Gracias por ayudarme! Por favor, contactá a mi familia para que puedan venir a buscarme.
+    </p>
+
+    <section class="contacto">
+      <h2>Agustina</h2>
+      <p class="telefono">353 766-6789</p>
+      <div class="botones">
+        <a class="boton" href="tel:+5493537666789">📞 Llamar</a>
+        <a class="boton whatsapp" href="https://wa.me/5493537666789?text=Hola%2C%20encontr%C3%A9%20a%20toby%20y%20quiero%20ayudar">WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="contacto">
+      <h2>Giuliana</h2>
+      <p class="telefono">353 767-7145</p>
+      <div class="botones">
+        <a class="boton" href="tel:+5493537677145">📞 Llamar</a>
+        <a class="boton whatsapp" href="https://wa.me/5493537677145?text=Hola%2C%20encontr%C3%A9%20a%20toby%20y%20quiero%20ayudar">WhatsApp</a>
+      </div>
+    </section>
+    <p class="nota">Gracias por ayudarme a volver a casa ❤️</p>
+  </main>
+</body>
+</html>
